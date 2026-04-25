@@ -26,16 +26,20 @@ tl.to('.progress', {
   duration: 1,
   ease: 'power4.out'
 }, "-=0.3")
-.from('.fade-up', {
-  y: 30,
-  opacity: 0,
-  stagger: 0.1,
-  duration: 0.8,
-  ease: 'power3.out'
-}, "-=0.8");
+.fromTo('.hero .fade-up', 
+  { y: 30, opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.1,
+    duration: 0.8,
+    ease: 'power3.out'
+  }, 
+  "-=0.8"
+);
 
 // Scroll Animations
-const fadeUps = document.querySelectorAll('.fade-up');
+const fadeUps = document.querySelectorAll('section:not(.hero) .fade-up, footer .fade-up');
 fadeUps.forEach(elem => {
   gsap.fromTo(elem, 
     { y: 50, opacity: 0 },
