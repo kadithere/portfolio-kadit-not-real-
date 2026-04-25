@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Januarta | Fullstack Engineer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-text">INITIALIZING...</div>
+    <div class="progress-bar"><div class="progress"></div></div>
+  </div>
+
+  <div class="noise-overlay"></div>
+
+  <!-- Main Content -->
+  <main data-scroll-container>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="pixel-grid"></div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-content" id="hero-3d">
+          <p class="role-badge fade-up">FULLSTACK SOFTWARE ENGINEER</p>
+          <h1 class="hero-title reveal-text glitch" data-text="ADITYA JANUARTA">ADITYA<br>JANUARTA</h1>
+          <p class="hero-subtitle fade-up">Turning complex problems into elegant, scalable code.</p>
+          <div class="hero-cta fade-up">
+            <a href="#projects" class="btn btn-primary interactive-btn">START_QUEST</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Marquee -->
+    <section class="stats">
+      <div class="marquee">
+        <div class="marquee-content">
+          <span>COMMITS: 2.4K+</span>
+          <span class="star">*</span>
+          <span>APPS DEPLOYED: 15</span>
+          <span class="star">*</span>
+          <span>UPTIME: 99.9%</span>
+          <span class="star">*</span>
+          <span>PERF SCORE: 98</span>
+          <span class="star">*</span>
+          <!-- Duplicate for infinite scroll -->
+          <span>COMMITS: 2.4K+</span>
+          <span class="star">*</span>
+          <span>APPS DEPLOYED: 15</span>
+          <span class="star">*</span>
+          <span>UPTIME: 99.9%</span>
+          <span class="star">*</span>
+          <span>PERF SCORE: 98</span>
+          <span class="star">*</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-heading pixel-font fade-up">> ABOUT_ME_</h2>
+        <div class="about-grid">
+          <div class="about-text fade-up">
+            <p>A Software Engineer specializing in the JavaScript/TypeScript ecosystem. I am deeply focused on high-performance application architecture, robust backend security, and crafting seamless, high-interactivity frontend experiences.</p>
+          </div>
+          <div class="skills-terminal fade-up">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="title">skills.exe</span>
+            </div>
+            <div class="terminal-window">
+              <p><span class="prompt">C:\></span> cat frontend.txt</p>
+              <p class="output">React.js, Next.js, Tailwind, TypeScript, Redux</p>
+              
+              <p><span class="prompt">C:\></span> cat backend.txt</p>
+              <p class="output">Node.js, Express, PostgreSQL, Redis, GraphQL</p>
+              
+              <p><span class="prompt">C:\></span> cat technical.txt</p>
+              <p class="output">Microservices, RESTful API, Automated Testing, OAuth 2.0, WebSockets</p>
+              <span class="cursor-blink"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-heading pixel-font fade-up">> INVENTORY_</h2>
+        
+        <div class="project-list">
+          <!-- Project 1 -->
+          <div class="project-item">
+            <div class="project-info info-left fade-up">
+              <span class="project-cat">E-Commerce</span>
+              <h3 class="project-title pixel-font">OMNICART</h3>
+              <p class="project-desc">High-traffic platform handling 10k req/s. Zero downtime during flash sales.</p>
+              <ul class="project-tech">
+                <li>Next.js (SSR)</li>
+                <li>Redis</li>
+              </ul>
+              <div class="stats-box">
+                <div>Load: 0.8s</div>
+                <div>Req/s: 10K</div>
+              </div>
+            </div>
+            <div class="project-visual visual-right parallax-img">
+              <div class="pixel-placeholder cart-bg"></div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-item reverse">
+            <div class="project-visual visual-left parallax-img">
+              <div class="pixel-placeholder chat-bg"></div>
+            </div>
+            <div class="project-info info-right fade-up">
+              <span class="project-cat">SaaS</span>
+              <h3 class="project-title pixel-font">STREAMLINE CHAT</h3>
+              <p class="project-desc">Professional-grade instant messaging with ultra-low latency & E2E encryption.</p>
+              <ul class="project-tech">
+                <li>WebSockets</li>
+                <li>Socket.io</li>
+              </ul>
+              <div class="stats-box">
+                <div>Latency: <100ms</div>
+                <div>Status: Real-time</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-item">
+            <div class="project-info info-left fade-up">
+              <span class="project-cat">Logistics</span>
+              <h3 class="project-title pixel-font">SUPPLYNODE API</h3>
+              <p class="project-desc">Enterprise-scale warehouse management backend API handling millions of entries.</p>
+              <ul class="project-tech">
+                <li>PostgreSQL</li>
+                <li>Swagger</li>
+              </ul>
+              <div class="stats-box">
+                <div>Speed: +500%</div>
+                <div>Scale: Millions</div>
+              </div>
+            </div>
+            <div class="project-visual visual-right parallax-img">
+              <div class="pixel-placeholder api-bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Testimonials -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <h2 class="section-heading pixel-font fade-up">> QUEST_LOG_</h2>
+        
+        <div class="timeline">
+          <div class="timeline-item interactive-quest fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-summary">
+              <h3>Instiki Developer Club</h3>
+              <p class="role">Lead <span class="date">[March 2026 - Present]</span></p>
+              <span class="toggle-icon">[+] EXPAND</span>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>> Lead a core team of [Number] officers to organize weekly technical seminars and industry networking events.</li>
+                <li>> Curated a comprehensive learning roadmap for members covering Full-stack development and Cloud Computing.</li>
+                <li>> Managed end-to-end logistics for club-wide hackathons, from sponsorship acquisition to technical judging.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-item interactive-quest fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-summary">
+              <h3>PT Kreatif Kode Indonesia</h3>
+              <p class="role">Senior Developer <span class="date">[2021 - Present]</span></p>
+              <span class="toggle-icon">[+] EXPAND</span>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>> Spearheaded the architectural migration from a monolithic system to a Microservices ecosystem.</li>
+                <li>> Reduced AWS infrastructure overhead by 15% through proactive resource optimization.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item interactive-quest fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-summary">
+              <h3>Tech Solution Hub</h3>
+              <p class="role">Web Developer <span class="date">[2018 - 2020]</span></p>
+              <span class="toggle-icon">[+] EXPAND</span>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>> Developed 10+ custom internal dashboards for logistics industry clients.</li>
+                <li>> Enforced rigorous quality assurance standards through Jest testing frameworks.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials fade-up">
+          <h2 class="section-heading pixel-font">> NPC_DIALOGUE_</h2>
+          <div class="testi-card">
+            <p>"Aditya is exceptionally competent. He provides sophisticated architectural solutions."</p>
+            <span class="testi-author">- John Doe (CTO, RetailCorp)</span>
+          </div>
+          <div class="testi-card">
+            <p>"Time estimates spot-on, code remarkably clean."</p>
+            <span class="testi-author">- Jane Smith (Product Manager)</span>
+          </div>
+          <div class="testi-card">
+            <p>"Perfect pixel-aligned implementation with my Figma designs."</p>
+            <span class="testi-author">- Robert Brown (Lead Designer)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="contact pixel-grid-bg" id="contact">
+      <div class="container fade-up">
+        <h2 class="pixel-font giant-text">CONNECT</h2>
+        <div class="social-links">
+          <a href="https://github.com/kadithere" target="_blank" class="pixel-btn">GITHUB</a>
+          <a href="https://linkedin.com/in/adityajanuarta" target="_blank" class="pixel-btn">LINKEDIN</a>
+          <a href="mailto:kdkadityajanuarta@gmail.com" class="pixel-btn">EMAIL</a>
+        </div>
+        <p class="footer-copy">© 2026 ADITYA JANUARTA. GAME OVER.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- GSAP & Plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
