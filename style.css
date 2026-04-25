@@ -607,12 +607,70 @@ a:hover ~ .cursor, .btn:hover ~ .cursor {
 }
 
 /* Media Queries */
+@media (hover: none) and (pointer: coarse) {
+  /* Disable custom cursor on touch devices */
+  .cursor {
+    display: none !important;
+  }
+  body, * {
+    cursor: auto !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-title { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+  .giant-text { font-size: clamp(1.8rem, 8vw, 6rem); }
+  .about-grid, .project-item { gap: 2rem; }
+}
+
 @media (max-width: 768px) {
+  .container {
+    padding: 0 4%;
+  }
+  section {
+    padding: 4rem 0 !important;
+  }
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
   .about-grid, .project-item { grid-template-columns: 1fr; }
+  
   .project-item.reverse .project-info { grid-column: 1; }
   .project-item.reverse .project-visual { grid-column: 1; }
   .project-item.reverse { text-align: left; }
   .project-item.reverse .project-tech, .project-item.reverse .stats-box { justify-content: flex-start; }
   .project-visual { height: 250px; }
-  .social-links { flex-direction: column; }
+  
+  .social-links { flex-direction: column; gap: 1rem; align-items: center; }
+  .social-links .pixel-btn { width: 100%; max-width: 300px; text-align: center; }
+  
+  .timeline {
+    padding-left: 1.5rem;
+  }
+  .timeline-dot {
+    left: -2.1rem;
+  }
+  .timeline-summary h3 {
+    font-size: 1.2rem;
+  }
+  .project-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .role-badge { font-size: 0.6rem; padding: 6px 10px; }
+  .section-heading { font-size: 1.5rem; }
+  .btn { padding: 0.8rem 1.2rem; font-size: 0.8rem; }
+  
+  .stats-box { flex-direction: column; gap: 0.5rem; }
+  
+  .testi-card { padding: 1.5rem; }
+  
+  .terminal-window { font-size: 0.85rem; padding: 15px; }
 }
