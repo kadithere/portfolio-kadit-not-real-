@@ -97,7 +97,7 @@ A robust backend API designed for enterprise-scale warehouse management.
 **Lead of Instiki Developer Club** | March 2026 - Present
 Bali, Indonesia
 
-- Lead a core team of [Number] officers to organize weekly technical seminars and industry networking events.
+- Lead a core team of 100+ officers to organize weekly technical seminars and industry networking events.
 
 - Curated a comprehensive learning roadmap for members covering Full-stack development and Cloud Computing.
 
